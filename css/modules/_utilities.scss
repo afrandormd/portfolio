@@ -1,0 +1,20 @@
+.d { //display
+  
+  &-flex {
+    display: flex;
+  }
+}
+
+.ai { //align items
+  
+  &-center {
+    align-items: center;
+  }
+}
+
+.jc { //justify content
+  
+  &-spacebetween {
+    justify-content: space-between;
+  }
+}

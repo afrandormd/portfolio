@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-spacebetween {
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 5.3333333333%;
+  margin: 1.5%;
+}
+
+.col-2 {
+  width: 13.6666666667%;
+  margin: 1.5%;
+}
+
+.col-3 {
+  width: 22%;
+  margin: 1.5%;
+}
+
+.col-4 {
+  width: 30.3333333333%;
+  margin: 1.5%;
+}
+
+.col-5 {
+  width: 38.6666666667%;
+  margin: 1.5%;
+}
+
+.col-6 {
+  width: 47%;
+  margin: 1.5%;
+}
+
+.col-7 {
+  width: 55.3333333333%;
+  margin: 1.5%;
+}
+
+.col-8 {
+  width: 63.6666666667%;
+  margin: 1.5%;
+}
+
+.col-9 {
+  width: 72%;
+  margin: 1.5%;
+}
+
+.col-10 {
+  width: 80.3333333333%;
+  margin: 1.5%;
+}
+
+.col-11 {
+  width: 88.6666666667%;
+  margin: 1.5%;
+}
+
+.col-12 {
+  width: 97%;
+  margin: 1.5%;
+}
+
+.header {
+  background-color: skyblue;
+}
+.header .nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header .nav-brand span {
+  color: white;
+}
+.header .nav-menu-item {
+  padding: 0 10px;
+}
+.header .nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+.header .nav .hamburger .bar {
+  display: block;
+  border-radius: 5px;
+  transition: all 0.5s ease in-out;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .header .nav-menu {
+    z-index: 999;
+    position: fixed;
+    right: -100%;
+    top: 40px;
+    flex-direction: column;
+    width: 70%;
+    background-color: skyblue;
+    opacity: 0.8;
+    text-align: center;
+    transition: 0.9s;
+  }
+  .header .nav-menu.active {
+    right: 0;
+  }
+  .header .nav-menu-item {
+    margin: 16px 0;
+  }
+  .header .nav .hamburger {
+    display: block;
+  }
+  .header .nav .hamburger.active .bar:nth-child(2) {
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .header .nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.5s;
+  }
+  .header .nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.5s;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
